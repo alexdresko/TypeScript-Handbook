@@ -1,3 +1,4 @@
-language: node_js
-node_js:
- - "node"
+script:
+  sudo aptitude install calibre
+  npm install gitbook-cli -g
+  gitbook mobi ./ ./mybook.mobi
