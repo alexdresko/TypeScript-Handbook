@@ -1,5 +1,6 @@
 script:
 - sudo aptitude install calibre -y
 - npm install gitbook-cli -g
+- npm install svgexport -g
 - gitbook mobi ./ ./mybook.mobi
 
