@@ -1,2 +1,5 @@
 script:
-  sudo aptitude install calibre
+- sudo aptitude install calibre
+- npm install gitbook-cli -g
+- gitbook mobi ./ ./mybook.mobi
+
