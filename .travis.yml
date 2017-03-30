@@ -3,4 +3,10 @@ script:
 - npm install gitbook-cli -g
 - npm install svgexport -g
 - gitbook mobi ./ ./mybook.mobi
-
+deploy:
+  provider: releases
+  api_key:
+    secure: ZAjpAkgXf6eqt1TS81u73pGS0OSQ4loae4xMDsFgfHqoRUMKOgIeTtAcAZohsBisdRt5FOLEc2dVCHsm/Z6BeeHUHAajnsyRZ++NYznURTZE5p5XEALmvLCFF1ZKMmqCE0f2+AuGyC4WhzzANK27qCYhz7DGWoVVdaeWbG1C9VKGVf3JtJ6GLo5dQ+1Fsd/Pbl8HqbBOgE5tvQeevxzGGgK7AIDDw+OOsZF2txVpSXyvHznOL2ttgvoraKaaDKkPO14HN9rupH4PwGsW11USwa3c7SBTprhYiaaOrllLTvFon5Yqw0iBVoHka4GOKkfsx574WQwawLRXIK4aWm43CuWFecQizaW27WtnIBB4ffKsfwmGsIXImpLZGtari69BWqZ0XpiF2nc0+UWjEhllK/s6vyH19G7fZL5WPSwBXcoY+kkdGgu8BpZaGPLEcMEMU1BMJpqGA3KnC/dhK4NsXCwX4YwCzUDBw3Jh0OgLdq0NvOD5MKdxfjtDhyhK3cdH7hWx8ZT09fPm3xTlODLF3satcMc9HDc2ASRS3yghCIYeKkDoLfOLWsI2NXbmc5bVIszkTXxrjnNvEiVLoxohoTdv4QsW3CxYSdrHvH/cMxvk52SuKHonrAL8u53YHv/Qqyrg5VcH5/yCRyW/ZNcCM/oU17GkCCsAHv9APs9fFno=
+  file: mybook.mobi
+  on:
+    repo: alexdresko/TypeScript-Handbook
